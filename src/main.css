@@ -6,7 +6,12 @@ html{
 
 
 
-
+body{
+  font-family: "Kanit", sans-serif;
+}
+.gradient:hover{
+  background: linear-gradient(to right, #0A0546, #6D56E0);
+}
 
 #textAnimation {
     /* background: linear-gradient(to right, darkorange 10%,
@@ -63,7 +68,7 @@ html{
       left: 0;
       width: 0%;
       height: 100%;
-      background-color: aqua;
+      background-color: #00ffff;
       transition: all .3s;
       border-radius: 10px;
       z-index: -1;
@@ -75,7 +80,14 @@ html{
       }
     }
   }
-  
+
+
+
+  /* img border raiours */
+  #servicesImg{
+    border-radius: 30% 70% 70% 30% / 46% 49% 51% 54% ;
+    background: linear-gradient(to right, #0A0546, #6D56E0);
+}
   @media screen and (max-width: 1000px){
       body{
         display: none;
