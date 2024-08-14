@@ -6,32 +6,35 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="main.css">
 </head>
-<body class="bg-[#23263A] h-[100vh] md:">
-        <nav class="flex justify-between px-32 pt-7 bg-[#0A0546]">
-            <div>
-                <h1 class="text-3xl font-semibold text-sky-500">Hye-Rin <span>DevZone</span></h1>
-            </div>
-            <div>
-                <ul class="flex *:mx-3 *:text-xl *:text-white hover:text-sky-500">
-                    <li><a href="#" class=" border-radius: 10px; text-sky-500">Home</a></li>
-                    <li><a href="#about" class=" border-radius: 10px;">About Us</a></li>
-                    <li><a href="#navigateService" class=" border-radius: 10px;">Services</a></li>
-                    <li><a href="#" class=" border-radius: 10px;">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
+<body class="bg-[#23263A] h-[100vh] md: scroll-smooth">
+    <nav class="flex justify-between items-center px-32 py-5 bg-[#0A0546] fixed w-full z-10">
+        <div>
+            <h1 class="text-3xl font-semibold text-sky-500 cursor-pointer">Hye-Rin <span>DevZone</span></h1>
+        </div>
+        <div>
+            <ul class="flex space-x-6 text-xl text-white">
+                <li><a href="#home" class="rounded-lg text-sky-500 hover:text-white">Home</a></li>
+                <li><a href="#about" class="rounded-lg hover:text-sky-500">About Us</a></li>
+                <li><a href="#navigateService" class="rounded-lg hover:text-sky-500">Services</a></li>
+                <li><a href="#portfolio" class="rounded-lg hover:text-sky-500">Portfolio</a></li>
+                <li><a href="#contact" class="rounded-lg hover:text-sky-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
         <!-- Heading Section -->
 
-        <header class="px-32 py-[70px] flex bg-[#0A0546] justify-between w-[100%]">
-            <div class="w-1/2">
+        <header id="home" class="px-32 flex bg-[#0A0546] justify-between w-[100%]">
+            <div class="w-[60%] pt-[60px]">
                 <h1 class="text-[3vw] pt-10 pb-3 font-semibold text-white">Hi There! <br><span id="textAnimation">Welcome To</span> <br>My Website</h1>
-                <p class="text-white pb-5 w-[90%]">I'm a passionate and skilled web designer with over 3 years of experience in crafting user-friendly and visually stunning websites. I specialize in building sites on popular platforms like WordPress, Wix, and Shopify. My expertise extends to HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript, allowing me to create responsive, high-performing websites. I have a strong focus on UI/UX principles to ensure every site I build offers a seamless user experience.
+                <p class="text-white pb-5 w-[70%]">I'm a passionate and skilled web designer with over 3 years of experience in crafting user-friendly and visually stunning websites. I specialize in building sites on popular platforms like WordPress, Wix, and Shopify. My expertise extends to HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript, allowing me to create responsive, high-performing websites. I have a strong focus on UI/UX principles to ensure every site I build offers a seamless user experience.
                 </p>
                 <button class=" px-5 py-2 text-white button">Contact Me</button>
             </div>
-            <div class="w-1/2">
-                <img class="w-[100%] mx-auto" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6e069285593141.5d80c5701f629.gif" alt="">
+            <div class="w-[40%] pt-[50px] z-[1]">
+                <!-- <img class="w-[100%] mx-auto" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6e069285593141.5d80c5701f629.gif" alt=""> -->
+                <dotlottie-player src="https://lottie.host/1c888be0-5dcc-47ae-b678-687e2757bb20/ja1ZGzDOKU.json" background="transparent" speed="1" style="width: 500px; height: 600px;" loop autoplay></dotlottie-player>
             </div>
         </header>
 
@@ -42,7 +45,7 @@
             <section class="bg-[#23263A] pt-20 px-32 text-white">
                 <div class="border-l-4 border-[#E2414D] pl-4 mb-[50px]">
                     <h4 class="text-[18px]">About Us</h4>
-                    <h1 class="text-5xl py-3 font-semibold" id="about">Who We Are</h1>
+                    <h1 class="text-5xl py-3 font-semibold" id="about">Who I Am</h1>
                 </div>
                 <!-- About main -->
                 <div class="flex justify-between">
@@ -63,11 +66,11 @@
                         </div>
                     </div>
                     <div class="w-[40%] mt-[-167px]">
-                        <img id="servicesImg" src="./assest/7771683223d86b237a3304d6f32828b9-removebg-preview.png" alt="">
+                        <img id="servicesImg" src="./assets/7771683223d86b237a3304d6f32828b9-removebg-preview.png" alt="">
                     </div>
                 </div>
             </section>
-            <!-- skils  -->
+            <!-- Exceptional Service -->
             <section id="navigateService" class="*:text-white px-32 py-20">
                 <div class="border-l-4 border-[#E2414D] pl-4 mb-[50px]">
                     <h4 class="text-[18px]">Services</h4>
@@ -77,37 +80,37 @@
                 <div class="*:bg-[#4d4f5c] grid-cols-3 grid *:mr-6 *:mb-6 *:py-7 *:px-8 *:border-l-4 *:border-[#E2414D] *:cursor-pointer *:rounded-[6px]">
                     <!-- first -->
                     <div class="*:pb-5 hover:border-white  gradient transition duration-300 ease-in-out">
-                        <img class="w-1/4" src="./assest/github.png" alt="">
+                        <img class="w-1/4" src="./assets/github.png" alt="">
                         <h2 class="text-3xl font-semibold" class="text-3xl">GitHub</h2>
                         <p>"Proficient in GitHub for version control, collaborative development, and managing projects, ensuring smooth workflows and efficient code management."</p>
                     </div>
                     <!-- second -->
                     <div class="*:pb-5 hover:border-white gradient transition duration-300 ease-in-out">
-                        <img class="w-1/4" src="./assest/ui-ux.png" alt="">
+                        <img class="w-1/4" src="./assets/ui-ux.png" alt="">
                         <h2 class="text-3xl font-semibold" class="text-3xl">Ux / UI</h2>
                         <p>"Experienced UX/UI designer focused on creating intuitive, user-centered interfaces that enhance usability and provide seamless digital experiences."</p>
                     </div>
                     <!-- third -->
                     <div class="*:pb-5 hover:border-white gradient transition duration-300 ease-in-out">
-                        <img class="w-1/4" src="./assest/website desing.png" alt="">
+                        <img class="w-1/4" src="./assets/website desing.png" alt="">
                         <h2 class="text-3xl font-semibold" class="text-3xl">Website Design</h2>
                         <p>"Creative website designer specializing in crafting visually stunning, user-friendly designs with a focus on responsive layouts and seamless navigation."</p>
                     </div>
                     <!-- fourth -->
                     <div class="*:pb-5 hover:border-white gradient transition duration-300 ease-in-out">
-                        <img class="w-1/4" src="./assest/js.png" alt="">
+                        <img class="w-1/4" src="./assets/js.png" alt="">
                         <h2 class="text-3xl font-semibold" class="text-3xl">JavaScript</h2>
                         <p>"Passionate JavaScript developer with expertise in creating dynamic, interactive web applications, focusing on responsive design and seamless user experiences."</p>
                     </div>
                     <!-- fifth -->
                     <div class="*:pb-5 hover:border-white gradient transition duration-300 ease-in-out">
-                        <img class="w-1/4" src="./assest/development.png" alt="">
+                        <img class="w-1/4" src="./assets/development.png" alt="">
                         <h2 class="text-3xl font-semibold" class="text-3xl">Web Development</h2>
                         <p>"Passionate web developer with expertise in HTML, CSS, JavaScript, and frameworks like Bootstrap and Tailwind CSS, creating responsive, user-friendly websites."</p>
                     </div>
                     <!-- last one -->
                     <div class="*:pb-5 hover:border-white gradient transition duration-300 ease-in-out">
-                        <img class="w-1/4" src="./assest/app development.png" alt="">
+                        <img class="w-1/4" src="./assets/app development.png" alt="">
                         <h2 class="text-3xl font-semibold" class="text-3xl">App Development</h2>
                         <p>"Passionate app developer skilled in HTML, CSS, JavaScript, and frameworks, crafting responsive, user-friendly mobile apps with seamless user experiences."</p>
                     </div>
@@ -128,7 +131,7 @@
 
              <!-- progress bar main -->
 
-             <section class="*:text-white px-32 pb-20 grid-cols-2 grid *:mr-8 my-12 *:mb-4">
+             <section class="*:text-white px-32 pb-20 grid-cols-2 grid *:mr-8 mt-12 *:mb-4">
                 <!-- first -->
                 <div>
                     <div class="flex justify-between">
@@ -140,7 +143,7 @@
                     <!-- bar -->
                     <div class="">
                         <div class="relative flex items-center">
-                            <div class="w-full bg-[#110B51] rounded-full h-2.5">
+                            <div class="w-full bg-[#fff] rounded-full h-2.5">
                                 <div class="absolute top-0 left-0 h-2.5 bg-[#E2414D] rounded-full" style="width: 70%;"></div>
                             </div>
                         </div>
@@ -157,7 +160,7 @@
                         <!-- bar -->
                         <div class="">
                             <div class="relative flex items-center">
-                                <div class="w-full bg-[#110B51] rounded-full h-2.5">
+                                <div class="w-full bg-[#fff] rounded-full h-2.5">
                                     <div class="absolute top-0 left-0 h-2.5 bg-[#E2414D] rounded-full" style="width: 80%;"></div>
                                 </div>
                             </div>
@@ -174,7 +177,7 @@
                         <!-- bar -->
                         <div class="">
                             <div class="relative flex items-center">
-                                <div class="w-full bg-[#110B51] rounded-full h-2.5">
+                                <div class="w-full bg-[#fff] rounded-full h-2.5">
                                     <div class="absolute top-0 left-0 h-2.5 bg-[#E2414D] rounded-full" style="width: 60%;"></div>
                                 </div>
                             </div>
@@ -191,7 +194,7 @@
                         <!-- bar -->
                         <div class="">
                             <div class="relative flex items-center">
-                                <div class="w-full bg-[#110B51] rounded-full h-2.5">
+                                <div class="w-full bg-[#fff] rounded-full h-2.5">
                                     <div class="absolute top-0 left-0 h-2.5 bg-[#E2414D] rounded-full" style="width: 60%;"></div>
                                 </div>
                             </div>
@@ -208,7 +211,7 @@
                         <!-- bar -->
                         <div class="">
                             <div class="relative flex items-center">
-                                <div class="w-full bg-[#110B51] rounded-full h-2.5">
+                                <div class="w-full bg-[#fff] rounded-full h-2.5">
                                     <div class="absolute top-0 left-0 h-2.5 bg-[#E2414D] rounded-full" style="width: 20%;"></div>
                                 </div>
                             </div>
@@ -225,7 +228,7 @@
                         <!-- bar -->
                         <div class="">
                             <div class="relative flex items-center">
-                                <div class="w-full bg-[#110B51] rounded-full h-2.5">
+                                <div class="w-full bg-[#fff] rounded-full h-2.5">
                                     <div class="absolute top-0 left-0 h-2.5 bg-[#E2414D] rounded-full" style="width: 60%;"></div>
                                 </div>
                             </div>
@@ -234,9 +237,112 @@
                 </div>
              </section>
 
+             <!-- portfolio -->
+             <div id="portfolio" class="border-l-4 border-[#E2414D] mb-[50px] pl-4 mx-32 text-white">
+                <h4 class="text-[18px]">Portfolio</h4>
+                <h1 class="text-5xl py-3 font-semibold">See My Past Work</h1>
+            </div>
+             <section class="px-32 grid grid-cols-3 gap-4">
+                <!-- first column -->
+                <div class="row-span-2 col-span-2 m-[calc(0.25rem)] relative group cursor-pointer">
+                    <img class="w-full h-full object-cover  rounded-md" src="./portfolio/codecanyon-poster.avif" alt="">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        <h1 class="text-2xl font-bold">Digital Creator</h1>
+                        <p class="mt-2 text-center w-[70%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et dolor sunt consectetur animi explicabo eius illo iusto quibusdam. A cumque modi voluptatibus at laboriosam veritatis autem nisi natus provident?</p>
+                    </div>
+                </div>
+                <!-- second column -->
+                <div class="m-[calc(0.25rem)] relative group cursor-pointer">
+                    <img class="w-full h-full object-cover  rounded-md" src="./portfolio/2.jpg" alt="">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        <h1 class="text-2xl font-bold">Real Estate Business</h1>
+                        <p class="mt-2 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et dolor sunt consectetur </p>
+                    </div>
+                </div>
+                <!-- Third column -->
+                <div class="m-[calc(0.25rem)] relative group cursor-pointer">
+                    <img class="w-full h-full object-cover  rounded-md" src="./portfolio/3.png" alt="">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        <h1 class="text-2xl font-bold">DIgital Art</h1>
+                        <p class="mt-2 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et dolor sunt consectetur </p>
+                    </div>
+                </div>
+                <!-- fourth column -->
+                <div class="m-[calc(0.25rem)] relative group cursor-pointer">
+                    <img class="w-full h-full object-cover  rounded-md" src="./portfolio/4.png" alt="">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        <h1 class="text-2xl font-bold">digital Agency</h1>
+                        <p class="mt-2 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et dolor sunt consectetur </p>
+                    </div>
+                </div>
+                <!-- Fifth colum -->
+                <div class="m-[calc(0.25rem)] relative group cursor-pointer">
+                    <img class="w-full h-full object-cover  rounded-md" src="./portfolio/5.png" alt="">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        <h1 class="text-2xl font-bold">Business Website</h1>
+                        <p class="mt-2 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et dolor sunt consectetur </p>
+                    </div>
+                </div>
+                <!-- sixth column -->
+                <div class="m-[calc(0.25rem)] relative group cursor-pointer">
+                    <img class="w-full h-full object-cover  rounded-md" src="./portfolio/6 (2).png" alt="">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 text-white flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:opacity-100 group-hover:scale-100">
+                        <h1 class="text-2xl font-bold">portfolio Website</h1>
+                        <p class="mt-2 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem et dolor sunt consectetur </p>
+                    </div>
+                </div>
+            </section>
+            
+            
+             <!-- contact us -->
 
+             <section id="contact" class="p-6 dark:bg-gray-100 *:text-white px-32 pb-20 w-[100%]">
+                <form novalidate="" action="" class="container flex flex-col space-y-12">
+                    <fieldset class=" flex gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50 justify-between">
+                        <div class="space-y-2 col-span-full lg:col-span-1">
+                            <p class="font-medium text-4xl">Contact Us</p>
+                            <dotlottie-player src="https://lottie.host/2ddc3d26-4c70-45fc-a809-d2e5134c54c2/nuwbAryJAW.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        </div>
+                        <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 w-[60%]">
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="firstname" class="text-sm">First name</label>
+                                <input id="firstname" type="text" placeholder="First name" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="lastname" class="text-sm">Last name</label>
+                                <input id="lastname" type="text" placeholder="Last name" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="email" class="text-sm">Email</label>
+                                <input id="email" type="email" placeholder="Email" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full sm:col-span-3">
+                                <label for="email" class="text-sm">Phone Number</label>
+                                <input id="email" type="number" placeholder="Phone Number With Country Code" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full">
+                                <label for="address" class="text-sm">Address</label>
+                                <input id="address" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full sm:col-span-2">
+                                <label for="city" class="text-sm">City</label>
+                                <input id="city" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full sm:col-span-2">
+                                <label for="state" class="text-sm">State / Province</label>
+                                <input id="state" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <div class="col-span-full sm:col-span-2">
+                                <label for="zip" class="text-sm">ZIP / Postal</label>
+                                <input id="zip" type="text" placeholder="" class="w-full rounded-md focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300 py-2 pl-4">
+                            </div>
+                            <button class="text-white text-center button col-span-full sm:col-span-2">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
 
-
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
             <!-- team section -->
              <!-- <section>
                 <div class="flex flex-wrap gap-10 justify-center">
